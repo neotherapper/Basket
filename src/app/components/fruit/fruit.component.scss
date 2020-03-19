@@ -1,0 +1,26 @@
+$basketIconWidth: 20px;
+
+.fruit {
+  h5 {
+    margin: 0;
+  }
+  background-color: white;
+  > img {
+    max-width: 100%;
+    max-height: 200px;
+  }
+  &__display {
+    height: 100px;
+    padding: 5px 10px 25px 10px;
+
+    img {
+      display: block;
+      position: relative;
+      right: -160px;
+      bottom: 5px;
+
+      width: $basketIconWidth;
+      height: $basketIconWidth;
+    }
+  }
+}

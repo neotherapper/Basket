@@ -1,0 +1,36 @@
+.basket {
+  margin: 0 auto;
+  max-width: 1000px;
+  background-color: #f1f1f1;
+  height: 100vh;
+  padding: 10px 50px;
+
+  &__header {
+    position: relative;
+    h1 {
+      display: inline;
+    }
+  }
+
+  &__total {
+    display: inline;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    // max-width: 800px;
+  }
+
+  &__item {
+    margin-right: 20px;
+  }
+
+
+}
