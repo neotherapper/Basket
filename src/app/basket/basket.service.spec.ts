@@ -15,11 +15,11 @@ describe('BasketService', () => {
   });
 
   it('should have an intial total basket value of 0', () => {
-    expect(service.basketTotal).toEqual(0);
+    expect(service.basketTotal.getValue()).toEqual(0);
   });
 
   it('should calculate correctly the basket value when something is added', () => {
     service.addAmountOnBasketTotal(1);
-    expect(service.basketTotal).toEqual(1);
+    expect(service.basketTotal.getValue()).toEqual(1);
   });
 });

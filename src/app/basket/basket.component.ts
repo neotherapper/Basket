@@ -15,7 +15,9 @@ export class BasketComponent implements OnInit {
 
   ngOnInit(): void {
     this.fruits = this.basketService.getAllFruits();
-    this.basketTotal = this.basketService.basketTotal;
+    this.basketService.basketTotal.subscribe( (total) => {
+       this.basketTotal = total;
+    });
   }
 
   onBasketAdd(fruit: FruitI): void {

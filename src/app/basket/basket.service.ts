@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
 import { FruitI } from '../components/fruit/fruit.model';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class BasketService {
-  basketTotal = 0;
+  public basketTotal = new BehaviorSubject(0);
 
   constructor() { }
 
@@ -33,7 +34,7 @@ export class BasketService {
   }
 
   addAmountOnBasketTotal(amount: number): void {
-    this.basketTotal += amount;
+    this.basketTotal.next(this.basketTotal.getValue() + amount);
   }
 
 }
