@@ -1,16 +1,17 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { BasketComponent } from './basket.component';
 
 
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./basket/basket.module').then(m => m.BasketModule)
-  }
+    component: BasketComponent,
+  },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class BasketRoutingModule { }
