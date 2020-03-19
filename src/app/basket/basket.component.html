@@ -1,0 +1,11 @@
+<div class="basket">
+  <div class="basket__header">
+     <h1>Simple Fruit</h1>
+     <div class="basket__total">Basket total: £{{basketTotal}}</div>
+  </div>
+  <ul class="basket__list" *ngIf="fruits.length>0">
+    <li *ngFor="let fruit of fruits; index as i" class="basket__item" (click)="onBasketAdd(fruit)">
+      <app-fruit [fruit]="fruit"></app-fruit>
+    </li>
+  </ul>
+</div>
