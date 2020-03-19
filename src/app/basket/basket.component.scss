@@ -1,10 +1,24 @@
 .basket {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1000px;
   background-color: #f1f1f1;
   height: 100vh;
+  padding: 10px 50px;
 
-  .h1 {
+  h1 {
+    text-align: center;
+  }
 
+  &__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    // max-width: 800px;
+  }
+
+  &__item {
+    margin-right: 20px;
   }
 }
