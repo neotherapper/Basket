@@ -1,6 +1,8 @@
 <div class="basket">
-  <h1>Simple Fruit</h1>
-
+  <div class="basket__header">
+     <h1>Simple Fruit</h1>
+     <div class="basket__total">Basket total: £{{basketTotal}}</div>
+  </div>
   <ul class="basket__list" *ngIf="fruits.length>0">
     <li *ngFor="let fruit of fruits; index as i" class="basket__item">
       <app-fruit [fruit]="fruit"></app-fruit>
