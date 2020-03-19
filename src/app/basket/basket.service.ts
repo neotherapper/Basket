@@ -5,7 +5,7 @@ import { FruitI } from '../components/fruit/fruit.model';
   providedIn: 'root'
 })
 export class BasketService {
-  basketTotal: 0;
+  basketTotal = 0;
 
   constructor() { }
 
@@ -32,8 +32,8 @@ export class BasketService {
     ];
   }
 
-  addAmountOnBasketTotal(amount: number) {
-    return this.basketTotal + amount;
+  addAmountOnBasketTotal(amount: number): void {
+    this.basketTotal += amount;
   }
 
 }
