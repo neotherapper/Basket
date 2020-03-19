@@ -13,19 +13,19 @@ export class BasketService {
   getAllFruits(): FruitI[] {
     return [
       {
-        imageUrl: './assets/apple.jpg',
+        imageUrl: 'apple.jpg',
         description: 'Lorem',
         price: 0.75,
         title: 'Apple',
       },
       {
-        imageUrl: './assets/banana.jpg',
+        imageUrl: 'banana.jpg',
         description: 'Lorem',
         price: 1.05,
         title: 'Banana',
       },
       {
-        imageUrl: './assets/orange.jpg',
+        imageUrl: 'orange.jpg',
         description: 'Lorem',
         price: 1.05,
         title: 'Orange',
